@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.line-space {
+    line-height: 1.5;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.logo-div {
+    font-size: 1.6rem; 
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    background-color: #F9F1F0;
+    border: 1px solid #F9F1F0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    text-transform: uppercase;
+}
+
+.wrap-1, .wrap-2 {
+    width: 97rem;
+    height: 6rem;
+}
+
+.wrap-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation-bar {
+    width: 75rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6rem;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-bar-2 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 5.7rem;
+    left: 0;
+    background-color: white;
+    border: 1px solid white;
+    padding-left: 2rem;
+    height: 100vh;
+    font-size: 1.4rem;
+    display: none;
+}
+
+.dropdown-ul {
+    display: none;
+}
+
+.navigation-bar-2 > div {
+    margin: 1.5rem 0;
+}
+
+.navigation-bar-2  li {
+    list-style-type: none;
+    margin: 1.5rem  1.5rem 2rem;
+}
+
+.navigation-bar-2  li a:hover {
+    color: orangered;
+}
+
+.navigation-bar-2 .log-in {
+    margin: 1.5rem 0 0;
+    padding: unset;
+}
+
+.navigation-bar-2 .sign-up {
+    width: 10rem;
+    text-align: center;
+}
+
+.logo-div a {
+    height: 6rem;
+}
+    
+.log-sign {
+    width: 30rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.log-sign a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    width: 20rem;
+    height: 5rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+i.book-logo {
+    font-size: 4rem;
+    margin-left: 0.5rem;
+    color: orangered;
+}
+
+.sign-up {
+    background-color: orangered;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+}
+
+.log-in {
+    padding: 1rem 2rem;
+}
+
+.log-in a:hover {
+    color: orangered;
+}
+
+.sign-up a {
+    color: #ffffff;
+}
+
+#menu {
+    display: none;
+    color: orangered;
+}
+.events, .products {
+    position: relative;
+}
+
+#click-event, #click-product {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid rgb(236, 229, 229);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 18rem;
+    top: 3.8rem;
+}
+
+.dropdown-content a {
+    padding: 1rem 1.6rem;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.navigation-bar > div > a:hover {
+    color: orangered;
+}
+
+main {
+    width: 100%;
+    padding: 9rem 4rem 4rem;
+}
+
+/* main > h1 {
+    text-align: center;
+    color: #FF00FF;
+    margin: 1rem 0;
+} */
+
+
+.package > a {
+    color: orangered;
+}
+
+.package-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 130rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    row-gap: 5rem;
+}
+
+.basic-container {
+    color: #fff;
+}
+
+.basic-container,
+.intermediate-container,
+.advanced-container {
+    background-color: #B08D57;
+    width: 100%;
+    max-width: 36rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    min-height: 61rem;
+}
+
+.basic-container > h1,
+.intermediate-container > h1,
+.advanced-container > h1 {
+    text-align: center;
+}
+
+.basic-container > a,
+.intermediate-container > a,
+.advanced-container > a {
+    text-decoration: none;
+}
+
+.gift-list {
+    list-style-type: none;
+    line-height: 2;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.join-now {
+    display: block;
+    font-size: 2.4rem;
+    margin: 8rem auto 4rem;
+    width: 100%;
+    padding: 2rem 0;
+    border-radius: 1.2rem;
+    border: 1px solid #fff;
+    box-shadow: 0 0.8rem #a6a1a1;
+    cursor: pointer;
+}
+
+.join-now:hover {
+    background-color: #ddd;
+    border-color: #ddd;
+    box-shadow: 0 0.8rem #787779;
+}
+
+.basic-container .join-now {
+    margin-top: 16rem;
+}
+
+.intermediate-container .join-now {
+    margin-top: 12rem;
+}
+
+.advanced-container .join-now {
+    background-color: #E58F2A;
+    border: 1px solid #E58F2A;
+    box-shadow: 0 0.8rem #c07013;
+}
+
+.advanced-container .join-now:hover {
+    background-color: #F1AB22;
+    border-color: #F1AB22;
+}
+
+.intermediate-container {
+    background-color: #C0C0C0;
+}
+
+.advanced-container-wrap {
+    background-color: #E5A300;
+    border-radius: 2rem;
+    padding: 0 1rem 1rem;
+    margin-bottom: 5.5rem;
+}
+
+.advanced-container-wrap > h4 {
+    text-align: center;
+    margin: 2rem 0;
+    /* font-weight: normal; */
+    font-size: 2rem;
+}
+
+.advanced-container {
+    background-color: #FFD700;
+
+}
+
+.advanced-container > ul {
+    line-height: 1.5;
+}
+
+.advanced-container .join-now {
+    margin: 2rem 0;
+}
+
+legend {
+    margin: 1rem 0;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    margin-bottom: 2px;
+}
+
+.checkbox-container {
+    font: 1.6rem;   
+    line-height: 1.5;
+}
+
+.custom-package {
+    width: 100%;
+    max-width: 36rem;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 60rem;
+    background-color: #00aced;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-package > a {
+    text-decoration: none;
+}
+
+.customize {
+    display: block;
+    font-size: 2.4rem;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    border: 1px solid #fff;
+    box-shadow: 0 0.8rem #a6a1a1;
+    cursor: pointer;
+}
+
+.customize:hover {
+    background-color: #ddd;
+    border-color: #ddd;
+    box-shadow: 0 0.8rem #787779;
+}
+
+
+
+.footer-container {
+    width: 100%;
+    background-color: #F4B9B8;
+    border: 1px solid #F4B9B8;
+    color: #351C75;
+    padding: 0 2rem 2rem;
+}
+
+.links {
+    max-width: 100rem;
+    width: 100%;
+    margin: 4rem auto 4rem;
+    display: flex;
+    justify-content: center;
+    line-height: 2.5;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 50rem;
+}
+.link {
+    width: 11.5rem;
+}
+
+.link > p {
+    margin-bottom: 1.2rem;
+}
+
+.link > a {
+    text-decoration: none;
+    color: white;
+}
+
+.link > a:hover {
+    text-decoration: underline;
+}
+
+.link > div > a {
+    text-align: center;
+    display: block;
+    background-color: #eceeef;
+    color: #818a91;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 100%;
+    line-height: 4.4rem;
+    margin: 2rem 0 2rem 1.4rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.link > div > a:hover {
+    color: white;
+}
+
+.facebook a:hover {
+    background-color: #316ff6;
+
+}
+
+.instagram a:hover {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.twitter a:hover {
+    background-color: #00aced;
+}
+
+.discord a:hover {
+    background-color: #5868E9;
+}
+
+hr {
+    color: #333236;
+    border: 1px solid #351C75;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 180rem;
+}
+
+.copyright {
+    color: white;
+    margin-top: 2.3rem;
+    text-align: center;
+}
+
+@media (max-width: 1360px) {
+    .wrap-1 {
+        display: none;
+    }
+    .log-sign {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .links {
+        flex-wrap: wrap;
+    }
+}

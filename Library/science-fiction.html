@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Library" />
+    <title>Library</title>
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="../icon/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <script src="library.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="wrap-1">
+            <nav class="navigation-bar">
+                <div class="home"><a href="../Home/home.html">Home</a></div>
+                <div class="about"><a href="../About/about.html">About</a></div>
+                <div class="library"><a href="../Library/library.html">library</a></div>
+                <div class="events">
+                    <a id="click-event">Events
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content" id="event-dropdown">
+                        <a href="../Live Discussion/live-discussion.html" id="live-discussion">Live Discussion</a>
+                        <a href="../Forum/forum.html" id="forum">Forum</a>
+                    </div>
+                </div>
+                <div class="products">
+                    <a id="click-product">Products
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content" id="product-dropdown">
+                        <a href="../Gift Card/gift-card.html"  id="gift-card">Gift Card</a>
+                        <a href="../Merchandise/merchandise.html" id="merchandise">Merchandise</a>
+                        <a href="../Gift Hamper/gift-hamper.html" id="gift-hamper">Gift Hamper</a>
+                    </div>
+                </div>
+                <div class="donate"><a href="../Donate/donate.html">Donate</a></div>
+                <div class="package">
+                    <a href="../Package/package.html">Package
+                        <i class="fa-solid fa-gift"></i>
+                    </a>
+                    
+                </div>
+            </nav>
+        </div>
+        <div class="logo-div">
+            <!-- <h1>Read It</h1>
+            <i class="fa-solid fa-book-open-reader book-logo"></i> -->
+            <a href="../Home/home.html">
+                <img src="../Img/Screenshot 2024-02-24 at 2.27.58 PM.png" alt="ReadIt Logo" id="logo">
+            </a>
+        </div>
+        <div class="wrap-2">
+            <div class="log-sign">
+                <div class="log-in"><a href="../Log In/log-in.html">Log In</a></div>
+                <div class="sign-up"><a href="../Sign Up/sign-up.html">Sign Up</a></div>
+            </div>
+            <i class="fa-solid fa-bars fa-2x" id="menu"></i>
+            <nav class="navigation-bar navigation-bar-2" id="nav-2">
+                <div class="home"><a href="../Home/home.html">Home</a></div>
+                <div class="about"><a href="../About/about.html">About</a></div>
+                <div class="library"><a href="../Library/library.html">library</a></div>
+                <div class="events">
+                    <a id="click-event">Events
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-ul" id="event-list">
+                        <li><a href="../Live Discussion/live-discussion.html" id="live-discussion">Live Discussion</a></li>
+                        <li><a href="../Forum/forum.html" id="forum">Forum</a></li>
+                    </ul>
+                </div>
+                <div class="products">
+                    <a id="click-product">Products
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-ul" id="product-list">
+                        <li><a href="../Gift Card/gift-card.html"  id="gift-card">Gift Card</a></li>
+                        <li><a href="../Merchandise/merchandise.html" id="merchandise">Merchandise</a></li>
+                        <li><a href="../Gift Hamper/gift-hamper.html" id="gift-hamper">Gift Hamper</a></li>
+                    </ul>                                
+                </div>
+                <div class="donate"><a href="../Donate/donate.html">Donate</a></div>
+                <div class="package">
+                    <a href="../Package/package.html">Package
+                        <i class="fa-solid fa-gift"></i>
+                    </a>
+                </div>
+                <div class="log-in"><a href="../Log In/log-in.html">Log In</a></div>
+                <div class="sign-up"><a href="../Sign Up/sign-up.html">Sign Up</a></div> 
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="library-container">
+            <div class="library-header-container">
+                <h1>All Science Fiction Novels</h1>
+                <div class="category">
+                    <p>Category  <i class="fas fa-caret-down"></i></p>
+                     <div class="category-dropdown-content">
+                        <a href="library.html">All (114)</a>
+                        <a href="romance.html">Romance (20)</a>
+                        <a href="adventure.html">Adventure (16)</a>
+                        <a href="thriller.html">Thriller (9)</a>
+                        <a href="fantasy.html">Fantasy (14)</a>
+                        <a href="mystery.html">Mystery (10)</a>
+                        <a href="historical.html">Historical (15)</a>
+                        <a href="science-fiction.html">Science Fiction (18)</a>
+                        <a href="humorous.html">Humorous (12)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="library-content-container">
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction1.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">The Princess Bride</h4>
+                        <p class="author">William Goldman</p>
+                        <a href="https://allnovel.net/the-princess-bride.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction2.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Born in Fire</h4>
+                        <p class="author">Nora Roberts</p>
+                        <a href="https://allnovel.net/born-in-fire-born-in-trilogy-1.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction3.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Zoe's Tale</h4>
+                        <p class="author">John Scalzi</p>
+                        <a href="https://allnovel.net/zoe-s-tale-old-man-s-war-4.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction4.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">The Stupidest Angel</h4>
+                        <p class="author">Christopher Moore</p>
+                        <a href="https://allnovel.net/the-stupidest-angel-pine-cove-3.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction5.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Harry Potter and the Philosopher's Stone</h4>
+                        <p class="author">J.K. Rowling</p>
+                        <a href="https://allnovel.net/harry-potter-and-the-philosopher-s-stone-harry-potter-1.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction6.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Harry Potter and the Prisoner of Azkaban</h4>
+                        <p class="author">J.K. Rowling</p>
+                        <a href="https://allnovel.net/harry-potter-and-the-prisoner-of-azkaban-harry-potter-3.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction7.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Harry Potter and the Goblet of Fire</h4>
+                        <p class="author">J.K. Rowling</p>
+                        <a href="https://allnovel.net/harry-potter-and-the-goblet-of-fire-harry-potter-4.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction8.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Harry Potter and the Half-Blood Prince</h4>
+                        <p class="author">J.K. Rowling</p>
+                        <a href="https://allnovel.net/harry-potter-and-the-half-blood-prince-harry-potter-6.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction9.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Harry Potter and the Deathly Hallows</h4>
+                        <p class="author">J.K. Rowling</p>
+                        <a href="https://allnovel.net/harry-potter-and-the-deathly-hallows-harry-potter-7.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction10.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Forrest Gump</h4>
+                        <p class="author">Winston Groom</p>
+                        <a href="https://allnovel.net/forrest-gump-forrest-gump-1.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction11.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Gump and Co.</h4>
+                        <p class="author">Winston Groom</p>
+                        <a href="https://allnovel.net/gump-and-co-forrest-gump-2.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction12.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Cirque du Freak</h4>
+                        <p class="author">Darren Shan</p>
+                        <a href="https://allnovel.net/cirque-du-freak-the-saga-of-darren-shan-1.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction13.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Direct Descent</h4>
+                        <p class="author">Frank Herbert</p>
+                        <a href="https://allnovel.net/direct-descent.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction14.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">The Heaven Makers</h4>
+                        <p class="author">Frank Herbert</p>
+                        <a href="https://allnovel.net/the-heaven-makers.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction15.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Uglies</h4>
+                        <p class="author">Scott Westerfeld</p>
+                        <a href="https://allnovel.net/uglies-uglies-1.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction16.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Leviathan</h4>
+                        <p class="author">Scott Westerfeld</p>
+                        <a href="https://allnovel.net/leviathan-leviathan-1.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction17.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">The Final Diagnosis</h4>
+                        <p class="author">Arthur Hailey</p>
+                        <a href="https://allnovel.net/the-final-diagnosis.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+                <div class="book-container">
+                    <img src="../Book Collection/Science Fiction18.jpeg" alt="Book" class="book">
+                    <div class="text-container">
+                        <h4 class="book-title">Walden</h4>
+                        <p class="author">Henry David Thoreau</p>
+                        <a href="https://allnovel.net/walden.html" target="_blank"><button class="read-now">Read Now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="links">
+                <div class="footer-wrap">
+                    <div class="link">
+                        <p>Quick Links</p>
+                        <a href="../Home/home.html">
+                            <p>Home</p>
+                        </a>
+                        <a href="../About/about.html">
+                            <p>About</p>
+                        </a>
+                        <a href="../Contact Us/contact-us.html">
+                            <p>Contact Us</p>
+                        </a>
+                        <a href="../Donate/donate.html">
+                            <p>Donate</p>
+                        </a>
+                    </div>
+                    <div class="link">
+                        <p>Products</p>
+                        <a href="../Gift Card/gift-card.html">
+                            <p>Gift Card</p>
+                        </a>
+                        <a href="../Merchandise/merchandise.html">
+                            <p>Merchandise</p>
+                        </a>
+                        <a href="../Gift Hamper/gift-hamper.html">
+                            <p>Gift Hamper</p>
+                        </a>
+                        <a href="../Package/package.html">
+                            <p>Package</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-wrap">
+                    <div class="link">
+                        <p>Services</p>
+                        <a href="../Library/library.html">
+                            <p>Library</p>
+                        </a>
+                        <a href="../Live Discussion/live-discussion.html">
+                            <p>Live Discussion</p>
+                        </a>
+                        <a href="../Forum/forum.html">
+                            <p>Forum</p>
+                        </a>
+                    </div>
+                    <div class="link last-link">
+                        <p>Follow Us</p>
+                        <div class="facebook">
+                            <a href="http://www.facebook.com" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="instagram">
+                            <a href="http://www.instagram.com" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="twitter">
+                            <a href="http://www.twitter.com" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="discord">
+                            <a href="http://www.discord.com" target="_blank">
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; Copyright 2024 All Rights Reserved by ReadIt</p>
+        </div>
+    </footer>
+</body>
+</html>

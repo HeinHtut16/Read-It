@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a[href*="cAsE"] {
+      color: red;
+    }
+ 
+    div[class*="example"] {
+      color: purple
+    }
+
+    div[class~="example"] {
+      color: blue;
+    }
+
+    div[class^="yet" i] {
+      color: cyan;
+    }
+
+    div[class~="b"] {
+      color: greenyellow;
+    }
+    
+  </style>
+</head>
+<body>
+  <a class="hi" href="#cAsEaa">Hello</a>
+  <div class="example hello">This is an example</div>
+  <div class="another-example-class">Another example</div>
+  <div class="yEt-another">Yet another example</div>
+  <div class="a b">GG</div>
+</body>
+</html>
