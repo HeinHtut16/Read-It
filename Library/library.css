@@ -243,7 +243,6 @@ main {
 .category:hover {
     background-color: #000000;
     color: #fff;
-    border: 1px solid #000000;
 }
 
 .category-dropdown-content {
@@ -333,6 +332,11 @@ main {
     border: 1px solid #F4B9B8;
     color: #351C75;
     padding: 0 2rem 2rem;
+}
+
+.category-modify {
+    background-color: #000000 !important;
+    color: #fff !important;
 }
 
 .links {
@@ -454,6 +458,10 @@ hr {
 @media (max-width: 570px) {
     .category:hover .category-dropdown-content {
         display: none;
+    }
+    .category:hover {
+        background-color: unset;
+        color: unset;
     }
     .library-header-container {
         flex-flow: column wrap;

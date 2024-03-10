@@ -4,6 +4,7 @@ let eventList = document.getElementById("event-list");
 let productList = document.getElementById("product-list");
 let menu = document.getElementById("menu");
 let navigationBar2 = document.getElementById("nav-2");
+let category = document.getElementById("category");
 let categoryDropdownContent = document.getElementById("category-dropdown-content");
 
 
@@ -29,6 +30,17 @@ document.addEventListener("click", (event) => {
         if(productDropdown.classList.contains("show"))
         {
             productDropdown.classList.remove("show");
+        }
+    }
+    if(!event.target.matches("#category") && !event.target.matches("#category > p") && !event.target.matches("#category p i"))
+    {
+        if(categoryDropdownContent.classList.contains("show"))
+        {
+            categoryDropdownContent.classList.remove("show");
+        }
+        if(category.classList.contains("category-modify"))
+        {
+            category.classList.remove("category-modify");
         }
     }
 });
@@ -57,4 +69,5 @@ document.getElementById("menu").addEventListener("click", () => {
 
 document.getElementById("category").addEventListener("click", () => {
     categoryDropdownContent.classList.toggle("show");
+    category.classList.toggle("category-modify");
 });
