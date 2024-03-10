@@ -125,9 +125,7 @@ header {
     text-align: center;
 }
 
-.logo-div a {
-    height: 6rem;
-}
+
     
 .log-sign {
     width: 30rem;
@@ -288,6 +286,10 @@ div.intro img {
     color:rgb(87, 34, 34);
 }
 
+.book-img {
+    width: 100%;
+    max-width: 31.4rem;
+}
 
 .book-text {
     text-transform: uppercase;
@@ -438,11 +440,13 @@ div.intro img {
     flex-flow: row wrap;
     margin: 0 auto;
     gap: 5rem;
+    padding: 2rem;
 }
 
 .join-learn-meet > div {
-    width: 40rem;
-    height: 55rem;
+    width: 100%;
+    max-width: 40rem;
+    min-height: 55rem;
     background-color: white;
     border-radius: 10px;
     padding: 0 5rem;
@@ -458,8 +462,9 @@ div.intro img {
 }
 
 .join-learn-meet > div > img {
-    width: 20rem;
-    height: 15rem;
+    width: 100%;
+    max-width: 20rem;
+    min-height: 15rem;
     display: block;
     margin: 7rem auto;
 }
@@ -662,5 +667,18 @@ hr {
 @media (max-width: 700px) {
     .links {
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 350px) {
+    div.intro img {
+        width: 25rem;
+        height: 25rem;
+        border-radius: 25rem;
+    }
+    #logo {
+        width: 15rem;
+        height: 3.5rem;
+        margin-top: unset;
     }
 }

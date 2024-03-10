@@ -121,9 +121,7 @@ header {
     text-align: center;
 }
 
-.logo-div a {
-    height: 6rem;
-}
+
     
 .log-sign {
     width: 30rem;
@@ -328,8 +326,8 @@ main {
 }
 
 .founder > img {
-    width: 35rem;
-    height: 35rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 100%;
     margin-bottom: 1rem;
 }
@@ -452,4 +450,24 @@ hr {
     .links {
         flex-wrap: wrap;
     }
+}
+
+@media (max-width: 450px) {
+    .founder > img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media (max-width: 350px) {
+    div.intro img {
+        width: 25rem;
+        height: 25rem;
+        border-radius: 25rem;
+    }
+    #logo {
+        width: 15rem;
+        height: 3.5rem;
+        margin-top: unset;
+    }   
 }

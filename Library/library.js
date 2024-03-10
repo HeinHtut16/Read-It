@@ -4,6 +4,7 @@ let eventList = document.getElementById("event-list");
 let productList = document.getElementById("product-list");
 let menu = document.getElementById("menu");
 let navigationBar2 = document.getElementById("nav-2");
+let categoryDropdownContent = document.getElementById("category-dropdown-content");
 
 
 document.getElementById("click-event").addEventListener("click", () => {
@@ -52,4 +53,8 @@ document.getElementById("menu").addEventListener("click", () => {
         menu.classList.remove("fa-xmark");
         menu.classList.add("fa-bars");
     }
+});
+
+document.getElementById("category").addEventListener("click", () => {
+    categoryDropdownContent.classList.toggle("show");
 });
