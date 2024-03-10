@@ -15,24 +15,23 @@ let price = document.getElementById("price");
 let image = 1;
 let dots = document.querySelectorAll(".dot");
 
-document.getElementById("click-event").addEventListener("click", () => {
+document.getElementById("wrap-events").addEventListener("click", () => {
     eventDropdown.classList.toggle("show");
 });
 
-document.getElementById("click-product").addEventListener("click", () => {
+document.getElementById("wrap-products").addEventListener("click", () => {
     productDropdown.classList.toggle("show");
 });
 
-
 document.addEventListener("click", (event) => {
-    if(!event.target.matches("#click-event"))
+    if(!event.target.matches("#wrap-events") && !event.target.matches("#wrap-events a") && !event.target.matches("#wrap-events i"))
     {
         if(eventDropdown.classList.contains("show"))
         {
             eventDropdown.classList.remove("show");
         }
     }
-    if(!event.target.matches("#click-product"))
+    if(!event.target.matches("#wrap-products") && !event.target.matches("#wrap-products a") && !event.target.matches("#wrap-products i"))
     {
         if(productDropdown.classList.contains("show"))
         {

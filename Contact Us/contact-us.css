@@ -60,10 +60,7 @@ header {
     text-transform: uppercase;
 }
 
-.wrap-1, .wrap-2 {
-    width: 97rem;
-    height: 6rem;
-}
+
 
 .wrap-2 {
     display: flex;
@@ -125,13 +122,23 @@ header {
     text-align: center;
 }
 
+.wrap-1 i {
+    font-size: 2.4rem;
+    display: none;
+}
+
+.wrap-1 .fa-caret-down {
+    display: inline;
+    font-size: 1.6rem;
+}
+
 
     
 .log-sign {
-    width: 30rem;
     display: flex;
     justify-content: flex-end;
 }
+
 
 .log-sign a {
     text-decoration: none;
@@ -142,8 +149,7 @@ header {
     width: 20rem;
     height: 5rem;
     display: block;
-}
-i.book-logo {
+}i.book-logo {
     font-size: 4rem;
     margin-left: 0.5rem;
     color: orangered;
@@ -205,6 +211,13 @@ i.book-logo {
 
 .navigation-bar > div > a:hover {
     color: orangered;
+}
+
+.wrap-events, .wrap-products{
+    cursor: pointer;
+    &:hover a, &:hover i {
+        color: orangered;
+    }
 }
 
 main {
@@ -375,7 +388,29 @@ hr {
     text-align: center;
 }
 
-@media (max-width: 1360px) {
+
+@media (max-width: 1300px) {
+    .wrap-1 .navigation-bar {
+        width: 65rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrap-1 .navigation-bar {
+        width: 60rem;
+    }
+    .nav-item-text {
+        display: none;
+    }
+    .wrap-1 i {
+        display: inline;
+    }
+    .dropdown-content {
+        top: 4.2rem;
+    }
+}
+
+@media (max-width: 1111px) {
     .wrap-1 {
         display: none;
     }

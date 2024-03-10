@@ -60,10 +60,7 @@ header {
     text-transform: uppercase;
 }
 
-/* .wrap-1, .wrap-2 {
-    width: 97rem;
-    height: 6rem;
-} */
+
 
 .wrap-2 {
     display: flex;
@@ -134,10 +131,8 @@ header {
     display: inline;
     font-size: 1.6rem;
 }
-
-    
+  
 .log-sign {
-    /* width: 30rem; */
     display: flex;
     justify-content: flex-end;
 }
@@ -223,7 +218,6 @@ i.book-logo {
         color: orangered;
     }
 }
-
 
 .home > a {
     color: orangered;

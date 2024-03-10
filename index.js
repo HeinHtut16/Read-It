@@ -5,8 +5,8 @@ let productList = document.getElementById("product-list");
 let menu = document.getElementById("menu");
 let navigationBar2 = document.getElementById("nav-2");
 // let mediumMediaWidth = window.matchMedia("(max-width: 1500px)")
-let navItemsText = document.querySelectorAll(".nav-item-text");
-let navItemsIcon = document.querySelectorAll(".wrap-1 i");
+// let navItemsText = document.querySelectorAll(".nav-item-text");
+// let navItemsIcon = document.querySelectorAll(".wrap-1 i");
 
 document.getElementById("wrap-events").addEventListener("click", () => {
     eventDropdown.classList.toggle("show");
