@@ -9,41 +9,26 @@ let navItemsText = document.querySelectorAll(".nav-item-text");
 let navItemsIcon = document.querySelectorAll(".wrap-1 i");
 
 
-document.getElementById("click-event").addEventListener("click", () => {
+document.getElementById("wrap-events").addEventListener("click", () => {
     eventDropdown.classList.toggle("show");
 });
 
-document.getElementById("click-event-2").addEventListener("click", () => {
-    eventDropdown.classList.toggle("show");
-});
-
-document.getElementById("click-event-3").addEventListener("click", () => {
-    eventDropdown.classList.toggle("show");
-});
-
-document.getElementById("click-product").addEventListener("click", () => {
+document.getElementById("wrap-products").addEventListener("click", () => {
     productDropdown.classList.toggle("show");
 });
 
-document.getElementById("click-product-2").addEventListener("click", () => {
-    productDropdown.classList.toggle("show");
-});
-
-document.getElementById("click-product-3").addEventListener("click", () => {
-    productDropdown.classList.toggle("show");
-});
 
 
 
 document.addEventListener("click", (event) => {
-    if(!event.target.matches("#click-event") && !event.target.matches("#click-event-3"))
+    if(!event.target.matches("#wrap-events") && !event.target.matches("#wrap-events a") && !event.target.matches("#wrap-events i"))
     {
         if(eventDropdown.classList.contains("show"))
         {
             eventDropdown.classList.remove("show");
         }
     }
-    if(!event.target.matches("#click-product") && !event.target.matches("#click-product-3"))
+    if(!event.target.matches("#wrap-products") && !event.target.matches("#wrap-products a") && !event.target.matches("#wrap-products i"))
     {
         if(productDropdown.classList.contains("show"))
         {

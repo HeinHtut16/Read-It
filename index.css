@@ -151,8 +151,8 @@ header {
     width: 20rem;
     height: 5rem;
     display: block;
-    margin-top: 0.5rem;
 }
+
 i.book-logo {
     font-size: 4rem;
     margin-left: 0.5rem;
@@ -641,7 +641,6 @@ hr {
     text-align: center;
 }
 
-
 @media (max-width: 1300px) {
     .wrap-1 .navigation-bar {
         width: 60rem;
@@ -651,6 +650,9 @@ hr {
     }
     .wrap-1 i {
         display: inline;
+    }
+    .dropdown-content {
+        top: 4.2rem;
     }
 }
 
