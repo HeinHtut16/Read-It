@@ -60,10 +60,10 @@ header {
     text-transform: uppercase;
 }
 
-.wrap-1, .wrap-2 {
+/* .wrap-1, .wrap-2 {
     width: 97rem;
     height: 6rem;
-}
+} */
 
 .wrap-2 {
     display: flex;
@@ -128,7 +128,6 @@ header {
 
     
 .log-sign {
-    width: 30rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -313,7 +312,7 @@ hr {
     text-align: center;
 }
 
-@media (max-width: 1360px) {
+/* @media (max-width: 1360px) {
     .wrap-1 {
         display: none;
     }
@@ -323,7 +322,7 @@ hr {
     #menu {
         display: block;
     }
-}
+} */
 
 @media (max-width: 700px) {
     .links {

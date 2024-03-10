@@ -4,6 +4,9 @@ let eventList = document.getElementById("event-list");
 let productList = document.getElementById("product-list");
 let menu = document.getElementById("menu");
 let navigationBar2 = document.getElementById("nav-2");
+let mediumMediaWidth = window.matchMedia("(max-width: 1200px)")
+let navItemsText = document.querySelectorAll(".nav-item-text");
+let navItemsIcon = document.querySelectorAll(".wrap-1 i");
 
 
 document.getElementById("click-event").addEventListener("click", () => {
@@ -53,4 +56,15 @@ document.getElementById("menu").addEventListener("click", () => {
         menu.classList.remove("fa-xmark");
         menu.classList.add("fa-bars");
     }
+});
+
+
+mediumMediaWidth.addEventListener("change", () => {
+    navItemsText.forEach((item) => {
+        item.textContent = "";
+    });
+
+    navItemsIcon.forEach((item) => {
+        item.style.display = "inline";
+    })
 });

@@ -53,3 +53,6 @@ document.getElementById("menu").addEventListener("click", () => {
         menu.classList.add("fa-bars");
     }
 });
+
+// console.log(document.getElementsByTagName("a"))
+// document.getElementsByTagName("a")[7].textContent = "none";
