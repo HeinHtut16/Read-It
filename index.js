@@ -4,10 +4,9 @@ let eventList = document.getElementById("event-list");
 let productList = document.getElementById("product-list");
 let menu = document.getElementById("menu");
 let navigationBar2 = document.getElementById("nav-2");
-let mediumMediaWidth = window.matchMedia("(max-width: 1500px)")
+// let mediumMediaWidth = window.matchMedia("(max-width: 1500px)")
 let navItemsText = document.querySelectorAll(".nav-item-text");
 let navItemsIcon = document.querySelectorAll(".wrap-1 i");
-
 
 document.getElementById("wrap-events").addEventListener("click", () => {
     eventDropdown.classList.toggle("show");
@@ -16,9 +15,6 @@ document.getElementById("wrap-events").addEventListener("click", () => {
 document.getElementById("wrap-products").addEventListener("click", () => {
     productDropdown.classList.toggle("show");
 });
-
-
-
 
 document.addEventListener("click", (event) => {
     if(!event.target.matches("#wrap-events") && !event.target.matches("#wrap-events a") && !event.target.matches("#wrap-events i"))

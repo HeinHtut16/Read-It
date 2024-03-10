@@ -643,6 +643,12 @@ hr {
 
 @media (max-width: 1300px) {
     .wrap-1 .navigation-bar {
+        width: 65rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrap-1 .navigation-bar {
         width: 60rem;
     }
     .nav-item-text {
