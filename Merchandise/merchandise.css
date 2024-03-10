@@ -219,6 +219,11 @@ main {
     color: white;
 }
 
+.navigation-bar-2 #merchandise {
+    background-color: unset;
+    color: orangered
+}
+
 .merchandise-container {
     width: 100%;
     background-color: #FADCD9;
@@ -463,8 +468,15 @@ hr {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
     header {
         padding: unset;
+    }
+    
+}
+
+@media (max-width: 238px) {
+    .wrap-2 {
+        justify-content: unset;
     }
 }

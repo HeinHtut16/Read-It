@@ -219,6 +219,11 @@ main {
     color: white;
 }
 
+.navigation-bar-2 #gift-card {
+    background-color: unset;
+    color: orangered
+}
+
 .gift-card-container {
     width: 100%;
     max-width: 160rem;
@@ -273,6 +278,7 @@ main {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     border-radius: 3px 0 0 3px;
+    transform: translateY(-50%);
 }
 
 .prev {

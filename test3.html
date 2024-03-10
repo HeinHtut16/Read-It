@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        & {
-            color: red;
+        div.outer-div {
+        height: 170px;
+        width: 300px;
+        background-color: lightgray;
+        position: relative;
+        }
+
+        div.middle-div {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
         }
     </style>
 </head>
 <body>
-    <div class="example" id="a">
-        <span>Hello</span>
-    </div>
+    <div class='outer-div'>
+        <div class='middle-div'>
+          Test text
+        </div>
+      </div>
 </body>
 </html>

@@ -219,6 +219,12 @@ main {
     color: white;
 }
 
+.navigation-bar-2 #gift-hamper {
+    background-color: unset;
+    color: orangered
+}
+
+
 .hamper-container {
     background-color: #FADCD9;
 }
