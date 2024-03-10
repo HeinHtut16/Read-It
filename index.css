@@ -180,6 +180,7 @@ i.book-logo {
 #menu {
     display: none;
     color: orangered;
+    cursor: pointer;
 }
 .events, .products {
     position: relative;
@@ -216,9 +217,18 @@ i.book-logo {
     color: orangered;
 }
 
+.wrap-events, .wrap-products{
+    cursor: pointer;
+    &:hover a, &:hover i {
+        color: orangered;
+    }
+}
+
+
 .home > a {
     color: orangered;
 }
+
 
 main {
     width: 100%;
@@ -631,6 +641,19 @@ hr {
     text-align: center;
 }
 
+
+@media (max-width: 1300px) {
+    .wrap-1 .navigation-bar {
+        width: 60rem;
+    }
+    .nav-item-text {
+        display: none;
+    }
+    .wrap-1 i {
+        display: inline;
+    }
+}
+
 @media (max-width: 1111px) {
     .wrap-1 {
         display: none;
@@ -640,12 +663,6 @@ hr {
     }
     #menu {
         display: block;
-    }
-}
-
-@media (max-width: 1350px) {
-    .wrap-1 .navigation-bar {
-        width: 60rem;
     }
 }
 

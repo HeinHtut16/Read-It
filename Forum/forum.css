@@ -173,6 +173,7 @@ i.book-logo {
 #menu {
     display: none;
     color: orangered;
+    cursor: pointer;
 }
 .events, .products {
     position: relative;
