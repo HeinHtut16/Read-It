@@ -388,6 +388,12 @@ hr {
     }
 }
 
+@media (max-width: 700px) {
+    .links {
+        flex-wrap: wrap;
+    }
+}
+
 
 @media (max-width: 500px) {
     form > h1 {

@@ -201,8 +201,10 @@ i.book-logo {
 }
 
 .show {
-    display: block;
+    display: block !important;
+    /* To overwrite .category:hover .category-dropdown-content (0-3-0) */
 }
+
 
 .navigation-bar > div > a:hover {
     color: orangered;
@@ -220,7 +222,7 @@ main {
 .library-container {
     width: 100%;
     max-width: 110rem;
-    margin: 2rem auto;
+    margin: 0 auto 2rem;
     padding: 2rem;
 }
 
@@ -277,6 +279,7 @@ main {
     justify-content: space-evenly;
     gap: 4rem 8.4rem;
     flex-wrap: wrap;
+    padding: 2rem;
 }
 
 .book-container {
@@ -447,3 +450,16 @@ hr {
         margin-top: unset;
     }
 }
+
+@media (max-width: 570px) {
+    .category:hover .category-dropdown-content {
+        display: none;
+    }
+    .library-header-container {
+        flex-flow: column wrap;
+        justify-content: center;
+        margin: unset;
+        gap: 2rem;
+    }
+}
+
