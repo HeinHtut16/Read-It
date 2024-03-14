@@ -5,30 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       
+       .big {
+        position: fixed;
+        width:100%;
+        height: 1000px;
+        background-color: black;
+        z-index: 100;
+       }
+       .small {
+        background-color: firebrick;
+        width: 20%;
+        height: 20%;
+        z-index: -1;
+        position: fixed;
+       }
     </style>
 </head>
 <body> 
-  <input type="radio" id="element">
+  <div class="big">
+    <div class="small"></div>
+  </div>
   <script>
-    let yourElement = document.getElementById("element");
-    let isChecked = false;
-
-function toggleCheckedState() {
-    // If it was previously checked, uncheck it
-    if (isChecked) {
-        this.checked = false;
-        isChecked = false;
-    } else {
-        // If it was not previously checked, check it
-        this.checked = true;
-        isChecked = true;
-    }
-}
-
-// Assuming you're attaching the event listener to some element
-yourElement.addEventListener("click", toggleCheckedState);
-
   </script>
 </body>
 </html>

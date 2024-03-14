@@ -4,6 +4,10 @@ let eventList = document.getElementById("event-list");
 let productList = document.getElementById("product-list");
 let menu = document.getElementById("menu");
 let navigationBar2 = document.getElementById("nav-2");
+let donationNotice = document.getElementById("donation-notice");
+let closeBtn = document.querySelector(".close");
+let donationWrapper = document.querySelector(".donation-wrapper");
+let donationBtn = document.querySelector(".donation-button");
 
 
 document.getElementById("wrap-events").addEventListener("click", () => {
@@ -50,5 +54,47 @@ document.getElementById("menu").addEventListener("click", () => {
     {
         menu.classList.remove("fa-xmark");
         menu.classList.add("fa-bars");
+    }
+});
+
+document.getElementById("donation-button").addEventListener("click", (event) => {
+    let donationAmount = document.getElementById("donation-amount").value;
+    if(donationAmount < 1)
+    {
+        event.preventDefault();
+    }
+});
+
+document.querySelector(".close").addEventListener("click", () => {
+    donationWrapper.classList.remove("show");
+});
+
+document.addEventListener("click", (event) => {
+    if(event.target.matches(".donation-wrapper"))
+    {
+        donationWrapper.classList.remove("show");
+    }
+});
+
+document.querySelector(".donate-now").addEventListener("click", () => {
+    donationWrapper.classList.add("show");
+});
+
+document.querySelector(".donation-amount").addEventListener("input", () => {
+    let donationAmount = document.getElementById("donation-amount").value;
+    if(donationAmount < 1)
+    {
+        donationNotice.classList.add("show");
+        donationBtn.classList.add("fade");
+        donationBtn.classList.remove("donation-button-hover");
+    }
+    else 
+    {
+        if(donationNotice.classList.contains("show"))
+        {
+            donationNotice.classList.remove("show")
+            donationBtn.classList.remove("fade");
+            donationBtn.classList.add("donation-button-hover");
+        };
     }
 });
