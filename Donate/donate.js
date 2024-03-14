@@ -65,12 +65,12 @@ document.getElementById("donation-button").addEventListener("click", (event) => 
     }
 });
 
-document.querySelector(".close").addEventListener("click", () => {
-    donationWrapper.classList.remove("show");
-});
+// document.querySelector(".close").addEventListener("click", () => {
+//     donationWrapper.classList.remove("show");
+// });
 
 document.addEventListener("click", (event) => {
-    if(event.target.matches(".donation-wrapper"))
+    if(event.target.matches(".donation-wrapper") || (event.target.matches(".close")))
     {
         donationWrapper.classList.remove("show");
     }
