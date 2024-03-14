@@ -244,6 +244,7 @@ p {
     max-width: 90rem;
     padding: 2rem 1rem;
     margin: 0 auto;
+    padding: 4rem;
 }
 
 .first-text-container > h1 {
@@ -282,6 +283,7 @@ p {
     width: 100%;
     max-width: 40rem;
     margin: 0 auto;
+    padding: 4rem;
 }
 
 .main-text-container > h3 {
