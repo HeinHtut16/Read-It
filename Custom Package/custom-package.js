@@ -12,6 +12,9 @@ let bookPlusButtons = document.querySelectorAll(".book-container .plus-btn");
 let bookMinusButtons = document.querySelectorAll(".book-container .minus-btn");
 let currentAmount = 0;
 let oneTime = true;
+let oneForumDiscussion = document.getElementById("one-forum-discussion");
+let twoForumDiscussion = document.getElementById("two-forum-discussion");
+let allForumDiscussion = document.getElementById("all-forum-discussion");
 
 document.getElementById("wrap-events").addEventListener("click", () => {
     eventDropdown.classList.toggle("show");
@@ -165,26 +168,51 @@ document.querySelector(".bag .plus-btn").addEventListener("click", () => {
 
 
 let clickOneForumDiscussion = () => {
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 9.99).toFixed(2);
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
-    currentAmount = 9.99;
+    if(oneForumDiscussion.checked)
+    {
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
+        currentAmount = 0;
+        oneForumDiscussion.toggle.checked;
+    }
+    else 
+    {
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) + 9.99).toFixed(2);
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
+        currentAmount = 9.99;
+    }
 }
 
 let clickTwoForumDiscussion = () => {
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 19.99).toFixed(2);
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
-    currentAmount = 19.99;
+    if(this.checked)
+    {
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
+        currentAmount = 0;
+    }
+    else 
+    {
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) + 19.99).toFixed(2);
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
+        currentAmount = 19.99;
+    }
 }
 
-let clickThreeForumDiscussion = () => {
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 29.99).toFixed(2);
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
-    currentAmount = 29.99;
+let clickAllForumDiscussion = () => {
+    if(this.checked)
+    {
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
+        currentAmount = 0;
+    }
+    else
+    {
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) + 29.99).toFixed(2);
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
+        currentAmount = 29.99;
+    }
 }
 
-document.querySelector("#one-forum-discussion").addEventListener("click", clickOneForumDiscussion);
-document.querySelector("#two-forum-discussion").addEventListener("click", clickTwoForumDiscussion);
-document.querySelector("#three-forum-discussion").addEventListener("click", clickThreeForumDiscussion);
+oneForumDiscussion.addEventListener("click", clickOneForumDiscussion);
+twoForumDiscussion.addEventListener("click", clickTwoForumDiscussion);
+allForumDiscussion.addEventListener("click", clickAllForumDiscussion);
 
 document.querySelector(".join-now").addEventListener("click", (event) => {
     if(parseInt(totalAmount.textContent) === 0)
@@ -200,7 +228,7 @@ document.querySelector(".join-now").addEventListener("click", (event) => {
 //     {
 //         // document.querySelector("#one-forum-discussion").removeEventListener("click", clickOneForumDiscussion); 
 //         // document.querySelector("#two-forum-discussion").addEventListener("click", clickTwoForumDiscussion);
-//         // document.querySelector("#three-forum-discussion").addEventListener("click", clickThreeForumDiscussion);
+//         // document.querySelector("#all-forum-discussion").addEventListener("click", clickAllForumDiscussion);
 //         totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
 //         currentAmount = 9.99;
 //     }
@@ -208,13 +236,13 @@ document.querySelector(".join-now").addEventListener("click", (event) => {
 //     {  
 //         // document.querySelector("#two-forum-discussion").removeEventListener("click", clickTwoForumDiscussion);
 //         // document.querySelector("#one-forum-discussion").addEventListener("click", clickOneForumDiscussion);
-//         // document.querySelector("#three-forum-discussion").addEventListener("click", clickThreeForumDiscussion);
+//         // document.querySelector("#all-forum-discussion").addEventListener("click", clickAllForumDiscussion);
 //         totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
 //         currentAmount = 19.99;
 //     }
-//     else if(event.target.matches("#three-forum-discussion"))
+//     else if(event.target.matches("#all-forum-discussion"))
 //     {  
-//         // document.querySelector("#three-forum-discussion").removeEventListener("click", clickThreeForumDiscussion);
+//         // document.querySelector("#all-forum-discussion").removeEventListener("click", clickAllForumDiscussion);
 //         // document.querySelector("#one-forum-discussion").addEventListener("click", clickOneForumDiscussion);
 //         // document.querySelector("#two-forum-discussion").addEventListener("click", clickTwoForumDiscussion);
 //         totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);

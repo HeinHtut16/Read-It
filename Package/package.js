@@ -4,7 +4,8 @@ let eventList = document.getElementById("event-list");
 let productList = document.getElementById("product-list");
 let menu = document.getElementById("menu");
 let navigationBar2 = document.getElementById("nav-2");
-
+let checkboxes = document.querySelectorAll("input[type='checkbox']");
+let limit = 3;
 
 document.getElementById("wrap-events").addEventListener("click", () => {
     eventDropdown.classList.toggle("show");
@@ -52,3 +53,22 @@ document.getElementById("menu").addEventListener("click", () => {
         menu.classList.add("fa-bars");
     }
 });
+
+for(let i = 0; i < checkboxes.length; i++)
+{  
+    checkboxes[i].addEventListener("click", () => {
+        let checkedCount = 0;
+        for(let i = 0; i < checkboxes.length; i++) 
+        {
+            if(checkboxes[i].checked) 
+            {
+                checkedCount++;
+            }
+        }
+        if(checkedCount > limit) 
+        {
+            alert("You can select a maximum of " + limit + " items");
+            checkboxes[i].checked = false;
+        }
+    });
+}
