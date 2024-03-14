@@ -424,7 +424,7 @@ input:not([type="submit"]) {
 @keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:10%; opacity:1}
-  }
+}
   
 /* @keyframes animatetop {
 from {top:-300px; opacity:0}

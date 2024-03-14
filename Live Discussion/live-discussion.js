@@ -72,13 +72,12 @@ document.querySelector(".close").addEventListener("click", () => {
     registrationForm.classList.remove("show");
 });
 
-document.querySelector(".send-message").addEventListener("click", () => {
-    console.log(registrationForm.classList.contains("show"))
-        if(registrationForm.style.display == "none")
-        {
+// document.querySelector(".send-message").addEventListener("click", () => {
+//     console.log(registrationForm.classList.contains("show"))
+//         if(registrationForm.style.display == "none")
+//         {
             
-            alert("Form Submitted Successfully!");
-        }
-
-});
+//             alert("Form Submitted Successfully!");
+//         }
+// });
 

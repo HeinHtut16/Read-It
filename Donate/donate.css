@@ -460,7 +460,6 @@ hr {
     left: 0;
     background-color: rgba(0,0,0,0.4);
     display: none;
-
 }
 
 .donation {
@@ -472,6 +471,8 @@ hr {
     background-color: #fff;
     margin: 0 auto;
     text-align: center;
+    /* animation-name: animatetop;
+    animation-duration: 0.4s; */
 }
 
 .donation-text {
@@ -542,6 +543,11 @@ hr {
     font-weight: bold;
     cursor: pointer;
     float: right;
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:30%; opacity:1}
 }
 
 @media (max-width: 1300px) {
