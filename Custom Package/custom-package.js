@@ -14,7 +14,9 @@ let currentAmount = 0;
 let oneForumDiscussion = document.getElementById("one-forum-discussion");
 let twoForumDiscussion = document.getElementById("two-forum-discussion");
 let allForumDiscussion = document.getElementById("all-forum-discussion");
-let isChecked = false;
+let oneForumDiscussionIsChecked = false;
+let twoForumDiscussionIsChecked = false;
+let allForumDiscussionIsChecked = false;
 
 
 document.getElementById("wrap-events").addEventListener("click", () => {
@@ -169,48 +171,62 @@ document.querySelector(".bag .plus-btn").addEventListener("click", () => {
 
 
 let clickOneForumDiscussion = () => {
-    if(!isChecked)
+    twoForumDiscussionIsChecked = false;
+    allForumDiscussionIsChecked = false;
+    if(!oneForumDiscussionIsChecked)
     {
         totalAmount.textContent = (parseFloat(totalAmount.textContent) + 9.99).toFixed(2);
         totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
         currentAmount = 9.99;
         oneForumDiscussion.checked = true;
-        isChecked = true;
+        oneForumDiscussionIsChecked = true;
     }
     else 
     {
         totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
         currentAmount = 0;
         oneForumDiscussion.checked = false;
-        isChecked = false;
+        oneForumDiscussionIsChecked = false;
     }
 }
 
 let clickTwoForumDiscussion = () => {
-    if(this.checked)
-    {
-        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
-        currentAmount = 0;
-    }
-    else 
+    oneForumDiscussionIsChecked = false;
+    allForumDiscussionIsChecked = false;
+    if(!twoForumDiscussionIsChecked) 
     {
         totalAmount.textContent = (parseFloat(totalAmount.textContent) + 19.99).toFixed(2);
         totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
         currentAmount = 19.99;
+        twoForumDiscussion.checked = true;
+        twoForumDiscussionIsChecked = true;
+    }
+    else 
+    {
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
+        currentAmount = 0;
+        twoForumDiscussion.checked = false;
+        twoForumDiscussionIsChecked = false;
     }
 }
 
 let clickAllForumDiscussion = () => {
-    if(this.checked)
-    {
-        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
-        currentAmount = 0;
-    }
-    else
+    oneForumDiscussionIsChecked = false;
+    twoForumDiscussionIsChecked = false;
+    if(!allForumDiscussionIsChecked)
     {
         totalAmount.textContent = (parseFloat(totalAmount.textContent) + 29.99).toFixed(2);
         totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
         currentAmount = 29.99;
+        allForumDiscussion.checked = true;
+        allForumDiscussionIsChecked = true;
+    }
+    else 
+    {
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
+        currentAmount = 0;
+        allForumDiscussion.checked = false;
+        allForumDiscussionIsChecked = false;
     }
 }
 
