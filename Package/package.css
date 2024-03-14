@@ -403,6 +403,9 @@ input[type="checkbox"] {
     box-shadow: 0 0.8rem #787779;
 }
 
+button {
+    color: #000;
+}
 
 
 .footer-container {

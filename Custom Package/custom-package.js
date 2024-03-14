@@ -11,10 +11,11 @@ let totalAmount = document.getElementById("total-amount");
 let bookPlusButtons = document.querySelectorAll(".book-container .plus-btn");
 let bookMinusButtons = document.querySelectorAll(".book-container .minus-btn");
 let currentAmount = 0;
-let oneTime = true;
 let oneForumDiscussion = document.getElementById("one-forum-discussion");
 let twoForumDiscussion = document.getElementById("two-forum-discussion");
 let allForumDiscussion = document.getElementById("all-forum-discussion");
+let isChecked = false;
+
 
 document.getElementById("wrap-events").addEventListener("click", () => {
     eventDropdown.classList.toggle("show");
@@ -168,17 +169,20 @@ document.querySelector(".bag .plus-btn").addEventListener("click", () => {
 
 
 let clickOneForumDiscussion = () => {
-    if(oneForumDiscussion.checked)
-    {
-        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
-        currentAmount = 0;
-        oneForumDiscussion.toggle.checked;
-    }
-    else 
+    if(!isChecked)
     {
         totalAmount.textContent = (parseFloat(totalAmount.textContent) + 9.99).toFixed(2);
         totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
         currentAmount = 9.99;
+        oneForumDiscussion.checked = true;
+        isChecked = true;
+    }
+    else 
+    {
+        totalAmount.textContent = (parseFloat(totalAmount.textContent) - currentAmount).toFixed(2);
+        currentAmount = 0;
+        oneForumDiscussion.checked = false;
+        isChecked = false;
     }
 }
 
