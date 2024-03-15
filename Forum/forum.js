@@ -120,6 +120,15 @@ document.getElementById("menu").addEventListener("click", () => {
 // });
 
 
+function hideMessages() {
+    for(let i = 4; i < content.length; i++) 
+    {
+        content[i].classList.add("hide");
+    }
+}
+hideMessages();
+
+
 document.querySelector("#search").onclick = () => {
     
     let inputValue = searchInput.value.toLowerCase();
@@ -136,15 +145,11 @@ document.querySelector("#search").onclick = () => {
     }
     else 
     {
-        for(let i = 4; i < content.length; i++) 
+        for(let i = 0; i < content.length; i++)
         {
             content[i].classList.add("hide");
         }
-        for(let i = 0; i < 4; i++)
-        {
-            content[i].classList.remove("hide");
-        }
-        viewMore.classList.remove("hide");
+        viewMore.classList.add("hide");
     }
 }
 
@@ -155,16 +160,20 @@ document.querySelector(".search").onkeydown = (e) => {
     }
 }
 
+document.querySelector("#reset").addEventListener("click", () => {
+    hideMessages();
+    for(let i = 0; i < 4; i++)
+    {
+        content[i].classList.remove("hide");
+    }
+    viewMore.classList.remove("hide");
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     searchInput.focus();
 });
 
-for(let i = 4; i < content.length; i++) 
-{
-    content[i].classList.add("hide");
-}
 let currentIndex = 4;
-
 document.querySelector(".view-more").addEventListener("click", () => {
     let showMessageCount = currentIndex + 4;
     for(let i = currentIndex; i < showMessageCount; i++)

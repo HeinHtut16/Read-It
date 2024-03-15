@@ -285,6 +285,10 @@ section > div {
     font-size: 16px;
 }
 
+#reset {
+    padding: 1rem 7rem;
+}
+
 #post-message {
     min-width: 19.5rem;
 }
