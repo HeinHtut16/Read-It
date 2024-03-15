@@ -541,7 +541,7 @@ hr {
     .sub-nav {
         flex-wrap: wrap;
     }
-    #post-message {
+    #post-message, #reset {
         width: 100%;
     }
     .flex-2 {
