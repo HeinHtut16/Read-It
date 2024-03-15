@@ -154,8 +154,29 @@ function hideMessages() {
 }
 hideMessages();
 
-document.querySelector("#search").onclick = () => {
+// document.querySelector("#search").onclick = () => {
     
+//     let inputValue = searchInput.value.toLowerCase();
+//     console.log(inputValue !== "")
+//     if(inputValue !== "")
+//     {
+//         usernamesTopicsContents.forEach(item => {
+//             let isVisible = item.username.toLowerCase().includes(inputValue) || item.topic.toLowerCase().includes(inputValue);
+//             item.content.classList.toggle("hide", !isVisible);
+//         });
+//         viewMore.classList.add("hide");
+//     }
+//     else 
+//     {
+//         for(let i = 0; i < nodeListContents.length; i++)
+//         {
+//             nodeListContents[i].classList.add("hide");
+//         }
+//         viewMore.classList.add("hide");
+//     }
+// }
+
+document.querySelector(".search").addEventListener("input", () => {
     let inputValue = searchInput.value.toLowerCase();
     console.log(inputValue !== "")
     if(inputValue !== "")
@@ -174,7 +195,7 @@ document.querySelector("#search").onclick = () => {
         }
         viewMore.classList.add("hide");
     }
-}
+});
 
 document.querySelector(".search").onkeydown = (e) => {
     if(e.key == "Enter")
