@@ -13,13 +13,12 @@
     </style>
 </head>
 <body> 
-  <button>Open Popup</button>
-  <dialog class="sth"></dialog>
+  <input type="text" class="a">
   <script>
-    let something = document.querySelector(".sth");
-    document.querySelector("button").addEventListener("click", () => {
-      something.showModal();
-    });
+    let a = document.querySelector("input[type='text']");
+    a.addEventListener("input", (e) => {
+      console.log(e.target)
+    })
   </script>
 </body>
 </html>

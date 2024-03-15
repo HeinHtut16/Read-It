@@ -300,7 +300,7 @@ section > div {
     color: black;
 }
 
-#search:hover {
+#search:active {
     background-color: #ddd;
 }
 
@@ -502,6 +502,30 @@ hr {
     color: white;
     margin-top: 2.3rem;
     text-align: center;
+}
+
+.view-more-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.view-more {
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 2.5rem;
+    color: #fff;    
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.view-more:active {
+    background-color: #686464;
+    border: 1px solid #686464;
+}
+
+.hide {
+    display: none;
 }
 
 @media (max-width: 678px) {
