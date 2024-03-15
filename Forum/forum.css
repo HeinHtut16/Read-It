@@ -263,7 +263,7 @@ section > div {
 .sub-nav > div {
     display: flex;
     width: 100%;
-    max-width: 83.5rem;
+    max-width: 84.5rem;
     gap: 2rem;
 }
 

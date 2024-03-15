@@ -6,13 +6,39 @@ let menu = document.getElementById("menu");
 let navigationBar2 = document.getElementById("nav-2");
 let contentContainer = document.getElementById("content-container");
 let currentDate = new Date();
+
 let nodeListUsers = document.querySelectorAll(".flex b");
-let elementArrays = [...nodeListUsers];
+let elementUsernames = [...nodeListUsers];
 let usernames = [];
-usernames = elementArrays.map(user => ({name: user.textContent}));
+usernames = elementUsernames.map(user => ({username: user.textContent}));
+
+let nodeListTopics = document.querySelectorAll(".flex-2 h4");
+let elementTopics = [...nodeListTopics];
+let topics = [];
+topics = elementTopics.map(topic => ({topicName: topic.textContent}));
+
+let nodeListContents = document.querySelectorAll(".content");
+let elementContents = [...nodeListContents];
+let contents = [];
+contents = elementContents.map(content => ({contentName: content})); 
+
+let usernamesTopicsContents = [];
+for(let i = 0; i < usernames.length; i++)
+{
+    let obj = {
+        username: usernames[i].username,
+        topic: topics[i].topicName,
+        content: contents[i].contentName
+    }
+    usernamesTopicsContents.push(obj);
+}
 let searchInput = document.querySelector(".search");
-let content = document.querySelectorAll(".content");
 let viewMore = document.querySelector(".view-more");
+
+console.log(contents);
+console.log(contents[0].contentName);
+console.log(usernamesTopicsContents);
+console.log(usernamesTopicsContents[0].content);
 
 // let monthNames = [
 //   "Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -121,13 +147,12 @@ document.getElementById("menu").addEventListener("click", () => {
 
 
 function hideMessages() {
-    for(let i = 4; i < content.length; i++) 
+    for(let i = 4; i < nodeListContents.length; i++) 
     {
-        content[i].classList.add("hide");
+        nodeListContents[i].classList.add("hide");
     }
 }
 hideMessages();
-
 
 document.querySelector("#search").onclick = () => {
     
@@ -135,26 +160,24 @@ document.querySelector("#search").onclick = () => {
     console.log(inputValue !== "")
     if(inputValue !== "")
     {
-        usernames.forEach((user, index) => {
-            console.log(user.name)
-            let isVisible = user.name.toLowerCase().includes(inputValue);
-            console.log(user.name.toLowerCase().includes(inputValue))
-            content[index].classList.toggle("hide", !isVisible);
+        usernamesTopicsContents.forEach(item => {
+            let isVisible = item.username.toLowerCase().includes(inputValue) || item.topic.toLowerCase().includes(inputValue);
+            item.content.classList.toggle("hide", !isVisible);
         });
         viewMore.classList.add("hide");
     }
     else 
     {
-        for(let i = 0; i < content.length; i++)
+        for(let i = 0; i < nodeListContents.length; i++)
         {
-            content[i].classList.add("hide");
+            nodeListContents[i].classList.add("hide");
         }
         viewMore.classList.add("hide");
     }
 }
 
 document.querySelector(".search").onkeydown = (e) => {
-    if(e.key === "Enter")
+    if(e.key == "Enter")
     {
         document.querySelector("#search").onclick();
     }
@@ -164,7 +187,7 @@ document.querySelector("#reset").addEventListener("click", () => {
     hideMessages();
     for(let i = 0; i < 4; i++)
     {
-        content[i].classList.remove("hide");
+        nodeListContents[i].classList.remove("hide");
     }
     viewMore.classList.remove("hide");
 });
@@ -179,9 +202,9 @@ document.querySelector(".view-more").addEventListener("click", () => {
     for(let i = currentIndex; i < showMessageCount; i++)
     {
         console.log("click")
-        content[i].classList.remove("hide");
+        nodeListContents[i].classList.remove("hide");
         currentIndex++;
-        if(content[i+1] === undefined)
+        if(nodeListContents[i+1] === undefined)
         {
             viewMore.classList.add("hide");
         }
