@@ -134,6 +134,18 @@ document.querySelector("#search").onclick = () => {
         });
         viewMore.classList.add("hide");
     }
+    else 
+    {
+        for(let i = 4; i < content.length; i++) 
+        {
+            content[i].classList.add("hide");
+        }
+        for(let i = 0; i < 4; i++)
+        {
+            content[i].classList.remove("hide");
+        }
+        viewMore.classList.remove("hide");
+    }
 }
 
 document.querySelector(".search").onkeydown = (e) => {
