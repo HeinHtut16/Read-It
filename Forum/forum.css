@@ -263,7 +263,7 @@ section > div {
 .sub-nav > div {
     display: flex;
     width: 100%;
-    max-width: 85rem;
+    max-width: 83.5rem;
     gap: 2rem;
 }
 
@@ -287,6 +287,11 @@ section > div {
 
 #reset {
     padding: 1rem 7rem;
+}
+
+#reset:active {
+    background-color: #686464;
+    border: 1px solid #686464;
 }
 
 #post-message {
