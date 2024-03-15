@@ -186,5 +186,4 @@ document.querySelector(".view-more").addEventListener("click", () => {
             viewMore.classList.add("hide");
         }
     }
-  
 });
