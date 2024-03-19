@@ -67,7 +67,7 @@ for(let i = 0; i < checkboxes.length; i++)
         }
         if(checkedCount > limit) 
         {
-            alert("You can select a maximum of " + limit + " items");
+            alert("You can only select a maximum of " + limit + " items");
             checkboxes[i].checked = false;
         }
     });
