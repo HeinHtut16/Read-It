@@ -271,6 +271,7 @@ main {
     width: 19.6rem;
     height: 20rem;
     border-radius: 0.8rem 0.8rem 0 0;
+    object-fit: cover;
 }
 
 .products-container > div {

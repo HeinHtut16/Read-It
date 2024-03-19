@@ -284,6 +284,12 @@ main {
     background-color: #ddd;
 }
 
+.category-modify {
+    background-color: #000000 !important;
+    color: #fff !important; 
+    /* Using To override .category:hover whose specificity weight is 0-2-0 */
+}
+
 .library-content-container {
     width: 100%;
     max-width: 110rem;
@@ -347,10 +353,6 @@ main {
     padding: 0 2rem 2rem;
 }
 
-.category-modify {
-    background-color: #000000 !important;
-    color: #fff !important;
-}
 
 .links {
     max-width: 100rem;

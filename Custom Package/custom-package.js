@@ -120,11 +120,11 @@ document.querySelector(".drinking-mug .plus-btn").addEventListener("click", () =
     totalAmount.textContent = (parseFloat(totalAmount.textContent) + 5.99).toFixed(2);
 });
 
-document.querySelector(".footwear .minus-btn").addEventListener("click", () => {
+document.querySelector(".bookmark .minus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) - 9.99).toFixed(2);
 });
 
-document.querySelector(".footwear .plus-btn").addEventListener("click", () => {
+document.querySelector(".bookmark .plus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) + 9.99).toFixed(2);
 });
 
@@ -136,11 +136,11 @@ document.querySelector(".all-over-shirt .plus-btn").addEventListener("click", ()
     totalAmount.textContent = (parseFloat(totalAmount.textContent) + 24.99).toFixed(2);
 });
 
-document.querySelector(".leggings .minus-btn").addEventListener("click", () => {
+document.querySelector(".crayons .minus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) - 19.99).toFixed(2);
 });
 
-document.querySelector(".leggings .plus-btn").addEventListener("click", () => {
+document.querySelector(".crayons .plus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) + 19.99).toFixed(2);
 });
 
@@ -152,11 +152,11 @@ document.querySelector(".jacket .plus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) + 39.99).toFixed(2);
 });
 
-document.querySelector(".skirt .minus-btn").addEventListener("click", () => {
+document.querySelector(".rucksack .minus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) - 29.99).toFixed(2);
 });
 
-document.querySelector(".skirt .plus-btn").addEventListener("click", () => {
+document.querySelector(".rucksack .plus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) + 29.99).toFixed(2);
 });
 
@@ -168,6 +168,53 @@ document.querySelector(".bag .plus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) + 14.99).toFixed(2);
 });
 
+document.querySelector(".snackbox1 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 29.99).toFixed(2);
+});
+
+document.querySelector(".snackbox1 .minus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) - 29.99).toFixed(2);
+});
+
+document.querySelector(".snackbox2 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 12.99).toFixed(2);
+});
+
+document.querySelector(".snackbox2 .minus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) - 12.99).toFixed(2);
+});
+
+document.querySelector(".snackbox3 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 15.99).toFixed(2);
+});
+
+document.querySelector(".snackbox3 .minus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) - 15.99).toFixed(2);
+});
+
+document.querySelector(".snackbox4 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 19.99).toFixed(2);
+});
+
+document.querySelector(".snackbox4 .minus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) - 19.99).toFixed(2);
+});
+
+document.querySelector(".snackbox5 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 24.99).toFixed(2);
+});
+
+document.querySelector(".snackbox5 .minus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) - 24.99).toFixed(2);
+});
+
+document.querySelector(".snackbox6 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 19.99).toFixed(2);
+});
+
+document.querySelector(".snackbox6 .minus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) - 19.99).toFixed(2);
+});
 
 
 let clickOneForumDiscussion = () => {
@@ -237,7 +284,7 @@ allForumDiscussion.addEventListener("click", clickAllForumDiscussion);
 document.querySelector(".join-now").addEventListener("click", (event) => {
     if(parseInt(totalAmount.textContent) === 0)
     {
-        alert("You must buy something!");
+        alert("Please add something to buy first!");
         event.preventDefault();
     }
 });

@@ -244,6 +244,13 @@ h1 {
     margin: 4rem auto;
 }
 
+.wrap2 {
+
+}
+
+
+
+
 .book-of-the-month-wrap {
     margin-top: 1rem;
 }
@@ -352,6 +359,7 @@ h1 {
     width: 19.6rem;
     height: 20rem;
     border-radius: 0.8rem 0.8rem 0 0;
+    object-fit: cover;
 }
 
 .products-container > div {
@@ -365,6 +373,19 @@ h1 {
     margin: unset;
 }
 
+.products-container2 {
+    max-width: 140rem;
+}
+
+.products-container2 > div {
+    width: 26rem;
+}
+
+.products-container2 img {
+    width: 26rem;
+    height: 26rem;
+    object-fit: fill;
+}
 
 .minus-btn:hover, .plus-btn:hover {
     background-color: #ddd;

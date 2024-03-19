@@ -34,6 +34,7 @@ for(let i = 0; i < usernames.length; i++)
 }
 let searchInput = document.querySelector(".search");
 let viewMore = document.querySelector(".view-more");
+let currentIndex = 4;
 
 console.log(contents);
 console.log(contents[0].contentName);
@@ -145,15 +146,6 @@ document.getElementById("menu").addEventListener("click", () => {
 //     document.getElementById("content-container").append(division);
 // });
 
-
-function hideMessages() {
-    for(let i = 4; i < nodeListContents.length; i++) 
-    {
-        nodeListContents[i].classList.add("hide");
-    }
-}
-hideMessages();
-
 // document.querySelector("#search").onclick = () => {
     
 //     let inputValue = searchInput.value.toLowerCase();
@@ -175,6 +167,14 @@ hideMessages();
 //         viewMore.classList.add("hide");
 //     }
 // }
+
+function hideMessages() {
+    for(let i = 4; i < nodeListContents.length; i++) 
+    {
+        nodeListContents[i].classList.add("hide");
+    }
+}
+hideMessages();
 
 document.querySelector(".search").addEventListener("input", () => {
     let inputValue = searchInput.value.toLowerCase();
@@ -211,13 +211,14 @@ document.querySelector("#reset").addEventListener("click", () => {
         nodeListContents[i].classList.remove("hide");
     }
     viewMore.classList.remove("hide");
+    currentIndex = 4;
 });
 
 document.addEventListener("DOMContentLoaded", () => {
     searchInput.focus();
 });
 
-let currentIndex = 4;
+
 document.querySelector(".view-more").addEventListener("click", () => {
     let showMessageCount = currentIndex + 4;
     for(let i = currentIndex; i < showMessageCount; i++)

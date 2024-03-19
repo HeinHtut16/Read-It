@@ -368,6 +368,7 @@ form {
     font-family: "Playfair Display", serif;
     overflow: auto;
     display: none;
+    overflow: auto;
 }
 
 form p {
