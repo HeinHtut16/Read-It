@@ -168,52 +168,52 @@ document.querySelector(".bag .plus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) + 14.99).toFixed(2);
 });
 
-document.querySelector(".snackbox1 .plus-btn").addEventListener("click", () => {
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 29.99).toFixed(2);
-});
-
 document.querySelector(".snackbox1 .minus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) - 29.99).toFixed(2);
 });
 
-document.querySelector(".snackbox2 .plus-btn").addEventListener("click", () => {
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 12.99).toFixed(2);
+document.querySelector(".snackbox1 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 29.99).toFixed(2);
 });
 
 document.querySelector(".snackbox2 .minus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) - 12.99).toFixed(2);
 });
 
-document.querySelector(".snackbox3 .plus-btn").addEventListener("click", () => {
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 15.99).toFixed(2);
+document.querySelector(".snackbox2 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 12.99).toFixed(2);
 });
 
 document.querySelector(".snackbox3 .minus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) - 15.99).toFixed(2);
 });
 
-document.querySelector(".snackbox4 .plus-btn").addEventListener("click", () => {
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 19.99).toFixed(2);
+document.querySelector(".snackbox3 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 15.99).toFixed(2);
 });
 
 document.querySelector(".snackbox4 .minus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) - 19.99).toFixed(2);
 });
 
-document.querySelector(".snackbox5 .plus-btn").addEventListener("click", () => {
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 24.99).toFixed(2);
+document.querySelector(".snackbox4 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 19.99).toFixed(2);
 });
 
 document.querySelector(".snackbox5 .minus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) - 24.99).toFixed(2);
 });
 
-document.querySelector(".snackbox6 .plus-btn").addEventListener("click", () => {
-    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 19.99).toFixed(2);
+document.querySelector(".snackbox5 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 24.99).toFixed(2);
 });
 
 document.querySelector(".snackbox6 .minus-btn").addEventListener("click", () => {
     totalAmount.textContent = (parseFloat(totalAmount.textContent) - 19.99).toFixed(2);
+});
+
+document.querySelector(".snackbox6 .plus-btn").addEventListener("click", () => {
+    totalAmount.textContent = (parseFloat(totalAmount.textContent) + 19.99).toFixed(2);
 });
 
 
