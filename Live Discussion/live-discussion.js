@@ -81,3 +81,7 @@ document.querySelector(".close").addEventListener("click", () => {
 //         }
 // });
 
+registrationForm.addEventListener("submit", () => {
+    alert("Form Submitted Successfully!");
+});
+
