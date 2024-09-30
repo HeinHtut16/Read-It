@@ -55,6 +55,15 @@ document.getElementById("menu").addEventListener("click", () => {
         menu.classList.remove("fa-xmark");
         menu.classList.add("fa-bars");
     }
+
+    if(navigationBar2.classList.contains("show")) 
+    {
+        document.body.style.overflow = "hidden";
+    } 
+    else 
+    {
+        document.body.style.overflow = "auto";
+    }
 });
 
 for(let i = 0; i < checkboxes.length; i++)
