@@ -6,6 +6,7 @@ let menu = document.getElementById("menu");
 let navigationBar2 = document.getElementById("nav-2");
 let category = document.getElementById("category");
 let categoryDropdownContent = document.getElementById("category-dropdown-content");
+let fixedContainer = document.querySelector(".fixed-container");
 
 
 document.getElementById("wrap-events").addEventListener("click", () => {
@@ -54,10 +55,12 @@ document.querySelector(".navigation-bar-2 #click-product").addEventListener("cli
 
 document.getElementById("menu").addEventListener("click", () => {
     navigationBar2.classList.toggle("show");
+    fixedContainer.classList.toggle("show");
     if(menu.classList.contains("fa-bars")) 
     {
-        menu.classList.remove("fa-bars");
-        menu.classList.add("fa-xmark");
+        // menu.classList.remove("fa-bars");
+        // menu.classList.add("fa-xmark");
+        menu.classList.replace("fa-bars", "fa-xmark");
     }
     else if(menu.classList.contains("fa-xmark"))
     {
@@ -69,4 +72,10 @@ document.getElementById("menu").addEventListener("click", () => {
 document.getElementById("category").addEventListener("click", () => {
     categoryDropdownContent.classList.toggle("show");
     category.classList.toggle("category-modify");
+});
+
+window.addEventListener("resize", () => {
+    navigationBar2.classList.remove("show");
+    fixedContainer.classList.remove("show");
+    menu.classList.replace("fa-xmark", "fa-bars");
 });

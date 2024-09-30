@@ -96,10 +96,12 @@ document.querySelector(".navigation-bar-2 #click-product").addEventListener("cli
 
 document.getElementById("menu").addEventListener("click", () => {
     navigationBar2.classList.toggle("show");
+    fixedContainer.classList.toggle("show");
     if(menu.classList.contains("fa-bars")) 
     {
-        menu.classList.remove("fa-bars");
-        menu.classList.add("fa-xmark");
+        // menu.classList.remove("fa-bars");
+        // menu.classList.add("fa-xmark");
+        menu.classList.replace("fa-bars", "fa-xmark");
     }
     else if(menu.classList.contains("fa-xmark"))
     {
@@ -107,7 +109,6 @@ document.getElementById("menu").addEventListener("click", () => {
         menu.classList.add("fa-bars");
     }
 });
-
 
 
 // document.getElementById("post").addEventListener("click", (event) => {
@@ -183,7 +184,8 @@ document.querySelector(".search").addEventListener("input", () => {
     {
         usernamesTopicsContents.forEach(item => {
             let isVisible = item.username.toLowerCase().includes(inputValue) || item.topic.toLowerCase().includes(inputValue);
-            item.content.classList.toggle("hide", !isVisible);
+            item.content.classList.toggle("hide", !isVisible); 
+            // toggle becomes a one-way operation, if (!isVisible) evaluates to true, "hide" is added to the classList, otherwise, nothing happens.
         });
         viewMore.classList.add("hide");
     }
@@ -231,4 +233,10 @@ document.querySelector(".view-more").addEventListener("click", () => {
             viewMore.classList.add("hide");
         }
     }
+});
+
+window.addEventListener("resize", () => {
+    navigationBar2.classList.remove("show");
+    fixedContainer.classList.remove("show");
+    menu.classList.replace("fa-xmark", "fa-bars");
 });

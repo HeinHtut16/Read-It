@@ -7,6 +7,7 @@ let navigationBar2 = document.getElementById("nav-2");
 // let mediumMediaWidth = window.matchMedia("(max-width: 1500px)")
 // let navItemsText = document.querySelectorAll(".nav-item-text");
 // let navItemsIcon = document.querySelectorAll(".wrap-1 i");
+let fixedContainer = document.querySelector(".fixed-container");
 
 document.getElementById("wrap-events").addEventListener("click", () => {
     eventDropdown.classList.toggle("show");
@@ -43,6 +44,7 @@ document.querySelector(".navigation-bar-2 #click-product").addEventListener("cli
 
 document.getElementById("menu").addEventListener("click", () => {
     navigationBar2.classList.toggle("show");
+    fixedContainer.classList.toggle("show");
     if(menu.classList.contains("fa-bars")) 
     {
         // menu.classList.remove("fa-bars");
@@ -66,3 +68,9 @@ document.getElementById("menu").addEventListener("click", () => {
 //         item.style.display = "inline";
 //     })
 // });
+
+window.addEventListener("resize", () => {
+    navigationBar2.classList.remove("show");
+    fixedContainer.classList.remove("show");
+    menu.classList.replace("fa-xmark", "fa-bars");
+});
