@@ -111,6 +111,7 @@ document.querySelector(".donation-amount").addEventListener("input", () => {
 });
 
 window.addEventListener("resize", () => {
+    document.body.style.overflow = "auto";
     navigationBar2.classList.remove("show");
     fixedContainer.classList.remove("show");
     menu.classList.replace("fa-xmark", "fa-bars");
