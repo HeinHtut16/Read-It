@@ -59,20 +59,11 @@ document.getElementById("menu").addEventListener("click", () => {
 
     if(navigationBar2.classList.contains("show")) 
     {
-        document.body.style.overflow = "hidden";
+        document.body.classList.add("scroll-lock");
     } 
     else 
     {
-        document.body.style.overflow = "auto";
-    }
-
-    if(navigationBar2.classList.contains("show")) 
-    {
-        document.body.style.overflow = "hidden";
-    } 
-    else 
-    {
-        document.body.style.overflow = "auto";
+        document.body.classList.remove("scroll-lock");
     }
 });
 
@@ -88,7 +79,7 @@ document.getElementById("menu").addEventListener("click", () => {
 // });
 
 window.addEventListener("resize", () => {
-    document.body.style.overflow = "auto";
+    document.body.classList.remove("scroll-lock");
     navigationBar2.classList.remove("show");
     fixedContainer.classList.remove("show");
     menu.classList.replace("fa-xmark", "fa-bars");
