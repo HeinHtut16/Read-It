@@ -36,6 +36,9 @@ let searchInput = document.querySelector(".search");
 let viewMore = document.querySelector(".view-more");
 let currentIndex = 4;
 
+let fixedContainer = document.querySelector(".fixed-container");
+
+
 console.log(contents);
 console.log(contents[0].contentName);
 console.log(usernamesTopicsContents);
