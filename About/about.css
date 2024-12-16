@@ -475,6 +475,10 @@ hr {
     .dropdown-content {
         top: 4.2rem;
     }
+    .founder > img {
+        width: 20rem;
+        height: 20rem;
+    }
 }
 
 @media (max-width: 1111px) {
@@ -487,6 +491,7 @@ hr {
     #menu {
         display: block;
     }
+
 }
 
 @media (max-width: 700px) {
