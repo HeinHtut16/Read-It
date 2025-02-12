@@ -128,13 +128,14 @@
     </header>
 
     <main>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
             <h1>Keep In Touch</h1>
             <div class="contact-us-container">
                 <div class="wrap-content">
                     <p>Want to give feedback or ask a general question?</p>
                     <p>Keep in touch with us below</p>
                 </div>
+                <input type="hidden" name="access_key" value="58b87341-2182-4d20-93f9-0f371989c1c2">
                 <input type="text" name="club-name" id="club-name" placeholder="Your Name" required>
                 <input type="email" name="club-email" id="club-email" placeholder="Your Email" required>
                 <input type="topic" name="club-topic" id="club-topic" placeholder="Topic" required>
