@@ -203,11 +203,13 @@ document.querySelector(".search").addEventListener("input", () => {
     }
     else 
     {
-        for(let i = 0; i < nodeListContents.length; i++)
+        hideMessages();
+        for(let i = 0; i < 4; i++)
         {
-            nodeListContents[i].classList.add("hide");
+            nodeListContents[i].classList.remove("hide");
         }
-        viewMore.classList.add("hide");
+        viewMore.classList.remove("hide");
+        currentIndex = 4;
     }
 });
 
