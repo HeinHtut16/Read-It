@@ -203,6 +203,13 @@ document.querySelector(".search").addEventListener("input", () => {
     }
     else 
     {
+        // for(let i = 0; i < nodeListContents.length; i++)
+        // {
+        //     nodeListContents[i].classList.add("hide");
+        // }
+        // viewMore.classList.add("hide");
+        // it makes forum show nothing if the search input is equal to ""
+
         hideMessages();
         for(let i = 0; i < 4; i++)
         {
